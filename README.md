@@ -1,2 +1,1 @@
-# mlp-xor
-Hardware Implementation of Multi-Layer Perceptron with XOR Logic
+# Hardware Implementation of Multi-Layer Perceptron with XOR Logic
