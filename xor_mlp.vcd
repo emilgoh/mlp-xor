@@ -1,0 +1,384 @@
+$date
+	Wed Sep 20 13:26:47 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	10ps
+$end
+$scope module tb_MLP $end
+$var wire 1 ! final_out $end
+$var reg 1 " clk $end
+$var reg 8 # hidden_bias1 [7:0] $end
+$var reg 8 $ hidden_bias2 [7:0] $end
+$var reg 8 % hidden_bias3 [7:0] $end
+$var reg 8 & hidden_weight1 [7:0] $end
+$var reg 8 ' hidden_weight2 [7:0] $end
+$var reg 8 ( hidden_weight3 [7:0] $end
+$var reg 8 ) hidden_weight4 [7:0] $end
+$var reg 8 * hidden_weight5 [7:0] $end
+$var reg 8 + hidden_weight6 [7:0] $end
+$var reg 1 , in1 $end
+$var reg 1 - in2 $end
+$var reg 8 . output_bias [7:0] $end
+$var reg 8 / output_weight1 [7:0] $end
+$var reg 8 0 output_weight2 [7:0] $end
+$var reg 8 1 output_weight3 [7:0] $end
+$var reg 1 2 reset $end
+$scope module uut $end
+$var wire 1 " clk $end
+$var wire 8 3 hidden_bias1 [7:0] $end
+$var wire 8 4 hidden_bias2 [7:0] $end
+$var wire 8 5 hidden_bias3 [7:0] $end
+$var wire 8 6 hidden_weight1 [7:0] $end
+$var wire 8 7 hidden_weight2 [7:0] $end
+$var wire 8 8 hidden_weight3 [7:0] $end
+$var wire 8 9 hidden_weight4 [7:0] $end
+$var wire 8 : hidden_weight5 [7:0] $end
+$var wire 8 ; hidden_weight6 [7:0] $end
+$var wire 1 , in1 $end
+$var wire 1 - in2 $end
+$var wire 8 < output_bias [7:0] $end
+$var wire 8 = output_weight1 [7:0] $end
+$var wire 8 > output_weight2 [7:0] $end
+$var wire 8 ? output_weight3 [7:0] $end
+$var wire 1 2 reset $end
+$var wire 11 @ output_neuron_out [10:0] $end
+$var wire 10 A hidden_neuron3_out [9:0] $end
+$var wire 10 B hidden_neuron2_out [9:0] $end
+$var wire 10 C hidden_neuron1_out [9:0] $end
+$var reg 1 ! final_out $end
+$scope module hidden_neuron1 $end
+$var wire 8 D bias [7:0] $end
+$var wire 1 " clk $end
+$var wire 1 , input1 $end
+$var wire 1 - input2 $end
+$var wire 1 2 rst $end
+$var wire 8 E weight1 [7:0] $end
+$var wire 8 F weight2 [7:0] $end
+$var reg 10 G neuron_out [9:0] $end
+$var reg 10 H tmp_out [9:0] $end
+$upscope $end
+$scope module hidden_neuron2 $end
+$var wire 8 I bias [7:0] $end
+$var wire 1 " clk $end
+$var wire 1 , input1 $end
+$var wire 1 - input2 $end
+$var wire 1 2 rst $end
+$var wire 8 J weight1 [7:0] $end
+$var wire 8 K weight2 [7:0] $end
+$var reg 10 L neuron_out [9:0] $end
+$var reg 10 M tmp_out [9:0] $end
+$upscope $end
+$scope module hidden_neuron3 $end
+$var wire 8 N bias [7:0] $end
+$var wire 1 " clk $end
+$var wire 1 , input1 $end
+$var wire 1 - input2 $end
+$var wire 1 2 rst $end
+$var wire 8 O weight1 [7:0] $end
+$var wire 8 P weight2 [7:0] $end
+$var reg 10 Q neuron_out [9:0] $end
+$var reg 10 R tmp_out [9:0] $end
+$upscope $end
+$scope module output_neuron $end
+$var wire 8 S bias [7:0] $end
+$var wire 1 " clk $end
+$var wire 10 T input1 [9:0] $end
+$var wire 10 U input2 [9:0] $end
+$var wire 10 V input3 [9:0] $end
+$var wire 1 2 rst $end
+$var wire 8 W weight1 [7:0] $end
+$var wire 8 X weight2 [7:0] $end
+$var wire 8 Y weight3 [7:0] $end
+$var reg 11 Z neuron_out [10:0] $end
+$var reg 11 [ tmp_out [10:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx [
+bx Z
+b1111111 Y
+b11110001 X
+b10000000 W
+bx V
+bx U
+bx T
+b1111111 S
+bx R
+bx Q
+b1111111 P
+b10000000 O
+b0 N
+bx M
+bx L
+b1110 K
+b11001000 J
+b11110001 I
+bx H
+bx G
+b1101110 F
+b10010010 E
+b1101110 D
+bx C
+bx B
+bx A
+bx @
+b1111111 ?
+b11110001 >
+b10000000 =
+b1111111 <
+b1111111 ;
+b10000000 :
+b1110 9
+b11001000 8
+b1101110 7
+b10010010 6
+b0 5
+b11110001 4
+b1101110 3
+02
+b1111111 1
+b11110001 0
+b10000000 /
+b1111111 .
+0-
+0,
+b1111111 +
+b10000000 *
+b1110 )
+b11001000 (
+b1101110 '
+b10010010 &
+b0 %
+b11110001 $
+b1101110 #
+0"
+x!
+$end
+#500
+b1101110 H
+b11110001 M
+b0 R
+1"
+#1000
+0"
+#1500
+0!
+b0 @
+b0 Z
+b0 A
+b0 Q
+b0 V
+b0 B
+b0 L
+b0 U
+b0 C
+b0 G
+b0 T
+1"
+12
+#2000
+0"
+#2500
+b1101110 C
+b1101110 G
+b1101110 T
+b11110001 B
+b11110001 L
+b11110001 U
+bx @
+bx Z
+b1111111 [
+1"
+02
+#3000
+0"
+#3500
+x!
+b1111111 @
+b1111111 Z
+b1001100000 [
+1"
+#4000
+0"
+#4500
+b1001100000 @
+b1001100000 Z
+0!
+1"
+#5000
+0"
+#5500
+1"
+#6000
+0"
+#6500
+1"
+#7000
+0"
+#7500
+1"
+#8000
+0"
+#8500
+1"
+#9000
+0"
+#9500
+1"
+#10000
+0"
+#10500
+b11011100 H
+b11111111 M
+b1111111 R
+1"
+1-
+#11000
+0"
+#11500
+b1111111 A
+b1111111 Q
+b1111111 V
+b11111111 B
+b11111111 L
+b11111111 U
+b11011100 C
+b11011100 G
+b11011100 T
+1"
+#12000
+0"
+#12500
+b10110001111 [
+1"
+#13000
+0"
+#13500
+b10110001111 @
+b10110001111 Z
+1"
+#14000
+0"
+#14500
+1!
+1"
+#15000
+0"
+#15500
+1"
+#16000
+0"
+#16500
+1"
+#17000
+0"
+#17500
+b10000000 R
+b110111001 M
+b100000000 H
+1"
+0-
+1,
+#18000
+0"
+#18500
+b100000000 C
+b100000000 G
+b100000000 T
+b110111001 B
+b110111001 L
+b110111001 U
+b10000000 A
+b10000000 Q
+b10000000 V
+1"
+#19000
+0"
+#19500
+b11100101000 [
+1"
+#20000
+0"
+#20500
+b11100101000 @
+b11100101000 Z
+1"
+#21000
+0"
+#21500
+1"
+#22000
+0"
+#22500
+1"
+#23000
+0"
+#23500
+1"
+#24000
+0"
+#24500
+b101101110 H
+b111000111 M
+b11111111 R
+1"
+1-
+#25000
+0"
+#25500
+b11111111 A
+b11111111 Q
+b11111111 V
+b111000111 B
+b111000111 L
+b111000111 U
+b101101110 C
+b101101110 G
+b101101110 T
+1"
+#26000
+0"
+#26500
+b1001010111 [
+1"
+#27000
+0"
+#27500
+b1001010111 @
+b1001010111 Z
+1"
+#28000
+0"
+#28500
+0!
+1"
+#29000
+0"
+#29500
+1"
+#30000
+0"
+#30500
+1"
+#31000
+0"
+#31500
+1"
+#32000
+0"
+#32500
+1"
+#33000
+0"
+#33500
+1"
+#34000
+0"
+#34500
+1"
