@@ -1,3 +1,6 @@
+`timescale 1ns/10ps
+`define CYCLE 8.0
+
 module tb_MLP;
 
     reg clk;
@@ -54,9 +57,7 @@ module tb_MLP;
     );
 
     // Clock Generation
-    always begin
-        #5 clk = ~clk;
-    end
+    always begin #(`CYCLE/2) clk = ~clk; end
 
 
     // Testbench Logic
